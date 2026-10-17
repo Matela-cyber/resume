@@ -39,7 +39,7 @@ header h1 {
 
 .title {
   font-size: 1.05rem;
-  color: #2563eb;
+  color: #334155;          /* Dark gray – not blue */
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -49,12 +49,13 @@ header h1 {
   color: #475569;
 }
 
-.contact a, .links a, .project a, footer a {
+/* Only real links are blue */
+a {
   color: #2563eb;
   text-decoration: none;
 }
 
-.contact a:hover, .links a:hover, .project a:hover, footer a:hover {
+a:hover {
   text-decoration: underline;
 }
 
@@ -102,6 +103,7 @@ h3 {
   margin: 2px 0 6px;
 }
 
+/* Technology stacks – muted gray, not blue */
 .tech {
   font-size: 0.86rem;
   color: #64748b;

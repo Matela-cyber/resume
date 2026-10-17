@@ -1,167 +1,418 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Portfolio of Teboho Vicent Matela, Software Engineering graduate from Lesotho, building web, mobile and full-stack applications.">
+
   <title>Teboho Vicent Matela | Software Engineer</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="container">
 
-    <!-- Header -->
-    <header>
-      <h1>TEBOHO VICENT MATELA</h1>
-      <p class="title">Software Engineer · Full-Stack Developer</p>
-      <p class="contact">
-        Lesotho &nbsp;|&nbsp;
-        <a href="tel:+26659510068">+266 5951 0068</a> &nbsp;|&nbsp;
-        <a href="mailto:tebohovmatela@gmail.com">tebohovmatela@gmail.com</a>
-      </p>
-      <p class="links">
-        <a href="https://www.linkedin.com/in/teboho-vicent-matela-527a9a284/" target="_blank">LinkedIn</a> ·
-        <a href="https://github.com/Matela-cyber" target="_blank">GitHub</a> ·
-        <a href="https://matela-cyber.github.io/my-portfolio/" target="_blank">Portfolio</a>
-      </p>
-    </header>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">TVM<span>.</span></a>
 
-    <!-- Summary -->
-    <section>
-      <h2>Professional Summary</h2>
-      <p>
-        Software Engineering with Multimedia graduate who builds useful web, mobile and desktop applications.
-        Strongest practical work is in full-stack platforms using React, TypeScript, Firebase and modern tooling.
-        Comfortable taking projects from idea to deployed product with clean architecture and real user needs in mind.
-      </p>
-    </section>
-
-    <!-- Experience -->
-    <section>
-      <h2>Professional Experience</h2>
-      <div class="job">
-        <div class="job-header">
-          <h3>Software Development Volunteer</h3>
-          <span class="date">May 2025 – August 2025</span>
-        </div>
-        <p class="company">Digital Innovators Summit Lesotho (DIS Lesotho)</p>
-        <ul>
-          <li>Developed and supported the official summit website and interactive digital platform (dislesotho.com).</li>
-          <li>Built responsive frontend interfaces and assisted with backend integration.</li>
-          <li>Performed testing, debugging and issue resolution throughout the project lifecycle.</li>
-          <li>Collaborated with developers and stakeholders; received a Certificate of Appreciation.</li>
-        </ul>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
       </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Introduction -->
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEER · LESOTHO</p>
+
+        <h1>Building software<br>that <span>solves real problems.</span></h1>
+
+        <p class="hero-description">
+          I'm Teboho Vicent Matela, a Software Engineering with Multimedia
+          graduate focused on building web platforms, mobile applications
+          and practical digital solutions.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Explore my work <span aria-hidden="true">↘</span>
+          </a>
+          <a class="button button-secondary" href="mailto:tebohovmatela@gmail.com">
+            Get in touch
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/Matela-cyber"
+             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/teboho-vicent-matela-527a9a284/"
+             target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://matela-cyber.github.io/my-portfolio/"
+             target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <div class="panel-top">
+          <span class="panel-label">DEVELOPER PROFILE</span>
+          <span class="panel-symbol">&lt;/&gt;</span>
+        </div>
+
+        <div class="profile-mark">TVM</div>
+
+        <h2>Teboho Vicent Matela</h2>
+        <p class="panel-role">Software Engineer · Full-Stack Developer</p>
+
+        <div class="panel-divider"></div>
+
+        <div class="profile-detail">
+          <span>Based in</span>
+          <strong>Lesotho</strong>
+        </div>
+        <div class="profile-detail">
+          <span>Focus</span>
+          <strong>Web & Mobile Applications</strong>
+        </div>
+        <div class="profile-detail">
+          <span>Education</span>
+          <strong>BSc Software Engineering</strong>
+        </div>
+      </aside>
     </section>
 
     <!-- Projects -->
-    <section>
-      <h2>Selected Projects</h2>
-
-      <div class="project">
-        <h3>PTROS — Delivery & Logistics Platform</h3>
-        <p class="tech">TypeScript · React 18 · Firebase · Turbo Monorepo · Tailwind · Vercel</p>
-        <ul>
-          <li>Advanced logistics platform with real-time vehicle tracking, route optimization and carrier management.</li>
-          <li>Built as a Turbo monorepo with role-based access, Firebase Realtime Database + Cloud Functions, and interactive maps (Leaflet + Google Maps).</li>
-          <li>Live carrier dashboard: <a href="https://ptros-carrier.vercel.app" target="_blank">ptros-carrier.vercel.app</a></li>
-        </ul>
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Projects I've built<span>.</span></h2>
+        </div>
+        <p class="section-intro">
+          Practical systems, from logistics and e-commerce to professional
+          membership platforms.
+        </p>
       </div>
 
-      <div class="project">
-        <h3>TechHub Lesotho — Full-Stack E-Commerce</h3>
-        <p class="tech">React · Firebase · React Native · Vercel · Cloudflare</p>
-        <ul>
-          <li>Complete e-commerce solution with customer storefront, admin dashboard and companion mobile app.</li>
-          <li>Product & order management, authentication, real-time Firestore updates and email notifications.</li>
-          <li>
-            Live storefront: <a href="https://tech-hub-lesotho.vercel.app" target="_blank">tech-hub-lesotho.vercel.app</a> · 
-            Admin: <a href="https://tech-hub-lesotho-admin.vercel.app" target="_blank">tech-hub-lesotho-admin.vercel.app</a>
-          </li>
-          <li>
-            Mobile APKs: <a href="https://drive.google.com/drive/folders/1grC08MoLRD3-xjCEHZeBdmF6A8qty4Pa" target="_blank">Download here</a>
-          </li>
-        </ul>
-      </div>
+      <div class="project-grid">
 
-      <div class="project">
-        <h3>LAQS — Professional Membership Portal</h3>
-        <p class="tech">React · Vite · Firebase</p>
-        <ul>
-          <li>Member portal prototype for the Lesotho Association of Architects and Quantity Surveyors.</li>
-          <li>Member registration, dashboard, CPD tracking, job listings and clean responsive interface.</li>
-          <li>Live: <a href="https://laqs.vercel.app" target="_blank">laqs.vercel.app</a></li>
-        </ul>
-      </div>
+        <!-- PTROS -->
+        <article class="project-card project-featured">
+          <div class="project-topline">
+            <span class="project-number">01 / LOGISTICS</span>
+            <span class="project-type">Web platform</span>
+          </div>
 
-      <div class="project">
-        <h3>Trading Bot — Automated MT5 System</h3>
-        <p class="tech">Python · MetaTrader 5</p>
-        <ul>
-          <li>Mean-reversion trading system with risk controls, session filters and Telegram notifications.</li>
-          <li>Built for research and controlled testing of automated strategies.</li>
-        </ul>
+          <h3>PTROS</h3>
+          <p class="project-subtitle">Package Tracking & Route Optimization System</p>
+
+          <p class="project-description">
+            A delivery management platform designed to connect customers,
+            carriers and coordinators through delivery workflows, tracking
+            and operational management.
+          </p>
+
+          <div class="project-tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Firebase</span>
+            <span>Tailwind CSS</span>
+          </div>
+
+          <div class="project-divider"></div>
+
+          <p class="link-heading">Explore the platform</p>
+          <div class="project-links">
+            <a href="https://ptros-carrier.vercel.app"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+              Carrier dashboard <span aria-hidden="true">↗</span>
+            </a>
+
+            <a href="https://ptros-coordinator.vercel.app"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+              Coordinator dashboard <span aria-hidden="true">↗</span>
+            </a>
+
+            <!-- Add the verified customer-app URL when available. -->
+            <span class="project-link project-link-pending"
+                  title="Customer interface; deployment link not yet provided">
+              Customer web app <span class="pending-label">Link pending</span>
+            </span>
+          </div>
+        </article>
+
+        <!-- TechHub -->
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="project-number">02 / E-COMMERCE</span>
+            <span class="project-type">Web & mobile</span>
+          </div>
+
+          <h3>TechHub Lesotho</h3>
+          <p class="project-subtitle">E-commerce platform</p>
+
+          <p class="project-description">
+            An e-commerce system with a customer storefront, administration
+            interface, product and order management, authentication and
+            email notifications.
+          </p>
+
+          <div class="project-tags">
+            <span>React</span>
+            <span>Firebase</span>
+            <span>React Native</span>
+            <span>Vercel</span>
+          </div>
+
+          <div class="project-divider"></div>
+
+          <p class="link-heading">Explore the platform</p>
+          <div class="project-links">
+            <a href="https://tech-hub-lesotho.vercel.app"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+              Live storefront <span aria-hidden="true">↗</span>
+            </a>
+
+            <a href="https://tech-hub-lesotho-admin.vercel.app"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+              Admin dashboard <span aria-hidden="true">↗</span>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1grC08MoLRD3-xjCEHZeBdmF6A8qty4Pa"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+              Mobile app APKs <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- LAQS -->
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="project-number">03 / PROFESSIONAL SERVICES</span>
+            <span class="project-type">Web application</span>
+          </div>
+
+          <h3>LAQS</h3>
+          <p class="project-subtitle">Professional membership portal</p>
+
+          <p class="project-description">
+            A portal for the Lesotho Association of Architects and Quantity
+            Surveyors, featuring member registration, dashboards, CPD tracking
+            and job listings.
+          </p>
+
+          <div class="project-tags">
+            <span>React</span>
+            <span>Vite</span>
+            <span>Firebase</span>
+          </div>
+
+          <div class="project-divider"></div>
+
+          <p class="link-heading">Explore the project</p>
+          <div class="project-links">
+            <a href="https://laqs.vercel.app"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+              Live membership portal <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Trading system -->
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="project-number">04 / AUTOMATION</span>
+            <span class="project-type">Independent project</span>
+          </div>
+
+          <h3>Automated Trading System</h3>
+          <p class="project-subtitle">Algorithmic trading research</p>
+
+          <p class="project-description">
+            A Python-based MetaTrader 5 system developed for strategy
+            research and controlled testing, with mean-reversion logic,
+            risk controls, session filters and Telegram alerts.
+          </p>
+
+          <div class="project-tags">
+            <span>Python</span>
+            <span>MetaTrader 5</span>
+            <span>Backtesting</span>
+            <span>Risk controls</span>
+          </div>
+
+          <div class="project-divider"></div>
+
+          <p class="project-note">
+            Independent research project. Source code is not publicly linked.
+          </p>
+        </article>
+
       </div>
     </section>
 
     <!-- Skills -->
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <h4>Languages</h4>
-          <p>TypeScript, JavaScript, Java, C++, Python, HTML/CSS</p>
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TECHNICAL TOOLKIT</p>
+            <h2>Skills & technologies<span>.</span></h2>
+          </div>
+          <p class="section-intro">
+            Tools and technologies used across software development,
+            cloud services and multimedia.
+          </p>
         </div>
-        <div>
-          <h4>Web & Mobile</h4>
-          <p>React, React Native, Vite, Tailwind CSS, React Router</p>
-        </div>
-        <div>
-          <h4>Backend & Cloud</h4>
-          <p>Firebase (Auth, Firestore, Realtime DB, Cloud Functions), Node.js, Vercel, Cloudflare, Google Cloud Platform</p>
-        </div>
-        <div>
-          <h4>Tools & Practices</h4>
-          <p>Git, pnpm, Turbo (monorepos), System Design, Software Testing, Agile</p>
-        </div>
-        <div>
-          <h4>Multimedia & Design</h4>
-          <p>Photoshop, Illustrator, After Effects, Unity, 3ds Max, Blender, UI/UX, Interactive Multimedia</p>
-        </div>
-        <div>
-          <h4>IT Support & Systems</h4>
-          <p>Technical Support, Software Troubleshooting, System Testing, Hardware Installation, Basic Networking, Systems Security</p>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-index">01</span>
+            <h3>Programming</h3>
+            <p>TypeScript, JavaScript, Java, Python, C++, HTML, CSS</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-index">02</span>
+            <h3>Web & mobile</h3>
+            <p>React, React Native, Vite, Tailwind CSS, React Router</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-index">03</span>
+            <h3>Backend & cloud</h3>
+            <p>Node.js, Firebase Auth, Firestore, Realtime Database, Cloud Functions, Vercel, Cloudflare, GCP</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-index">04</span>
+            <h3>Tools & engineering</h3>
+            <p>Git, pnpm, Turbo, testing, debugging, system design and Agile practices</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-index">05</span>
+            <h3>Multimedia & design</h3>
+            <p>Photoshop, Illustrator, After Effects, Unity, 3ds Max, Blender and UI/UX</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-index">06</span>
+            <h3>IT support & systems</h3>
+            <p>Troubleshooting, system testing, hardware and software installation, networking and systems security</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Education -->
-    <section>
-      <h2>Education</h2>
-      <div class="job">
-        <div class="job-header">
-          <h3>BSc Software Engineering with Multimedia</h3>
-          <span class="date">2022 – 2026</span>
+    <!-- About, experience and education -->
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">BACKGROUND</p>
+          <h2>A little about me<span>.</span></h2>
         </div>
-        <p class="company">Limkokwing University of Creative Technology — Lesotho</p>
-        <p>CGPA: 3.19 / 4.00</p>
+      </div>
+
+      <div class="background-grid">
+        <div class="about-copy">
+          <p>
+            I'm a Software Engineering with Multimedia graduate from
+            Limkokwing University of Creative Technology in Lesotho.
+            I enjoy turning ideas into working systems, connecting
+            frontend interfaces to backend services and solving practical
+            problems through software.
+          </p>
+          <p>
+            My project experience spans logistics, e-commerce, professional
+            membership services and algorithmic trading research. I also
+            bring multimedia and IT support skills to my development work.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">MAY – AUG 2025</span>
+            <h3>Software Development Volunteer</h3>
+            <p class="timeline-org">Digital Innovators Summit Lesotho</p>
+            <p>
+              Contributed to the summit's website, responsive interfaces,
+              backend integration, testing and issue resolution.
+            </p>
+            <a href="https://dislesotho.com"
+               target="_blank" rel="noopener noreferrer"
+               class="text-link">
+              Visit summit website ↗
+            </a>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date">2022 – 2026</span>
+            <h3>BSc Software Engineering with Multimedia</h3>
+            <p class="timeline-org">
+              Limkokwing University of Creative Technology, Lesotho
+            </p>
+            <p>CGPA: 3.19 / 4.00</p>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date">RECOGNITION</span>
+            <h3>Certificate of Appreciation</h3>
+            <p class="timeline-org">Digital Innovators Summit Lesotho</p>
+            <p>Recognised for contributions to software development.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Certifications -->
-    <section>
-      <h2>Certifications & Recognition</h2>
-      <ul>
-        <li>Certificate of Appreciation — Digital Innovators Summit Lesotho (Software Development contribution)</li>
-      </ul>
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Have a project or opportunity?</h2>
+        <p>
+          I'm open to discussing software development opportunities
+          and practical technology projects.
+        </p>
+
+        <a class="button button-light"
+           href="mailto:tebohovmatela@gmail.com">
+          Email me <span aria-hidden="true">↗</span>
+        </a>
+
+        <div class="contact-details">
+          <a href="mailto:tebohovmatela@gmail.com">tebohovmatela@gmail.com</a>
+          <a href="tel:+26659510068">+266 5951 0068</a>
+          <span>Lesotho</span>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <footer>
-      <p>
-        Portfolio: <a href="https://matela-cyber.github.io/my-portfolio/" target="_blank">matela-cyber.github.io/my-portfolio</a> &nbsp;·&nbsp;
-        GitHub: <a href="https://github.com/Matela-cyber" target="_blank">github.com/Matela-cyber</a>
-      </p>
-    </footer>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home">TVM<span>.</span></a>
+      <p>Designed and built by Teboho Vicent Matela.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
 
-  </div>
 </body>
 </html>

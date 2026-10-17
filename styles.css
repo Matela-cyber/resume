@@ -182,16 +182,20 @@ a:hover {
   color: #475569;
 }
 
-/* Divider - major sections (thicker accent) */
+/* Divider - major sections (solid accent) */
 hr.divider {
+  display: block;
+  width: 100%;
   border: 0;
   height: 1.5px;
-  background-color: #2563eb;
+  background-color: #2563eb; /* solid accent color */
   margin: 18px 0;
 }
 
-/* Minor divider for project items */
+/* Minor divider for project items (kept as-is) */
 hr.minor {
+  display: block;
+  width: 100%;
   border: 0;
   height: 1px;
   background-color: #e2e8f0;

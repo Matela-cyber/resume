@@ -9,17 +9,17 @@ body {
   font-size: 15px;
   line-height: 1.5;
   color: #1e293b;
-  background: #f1f5f9;
-  padding: 40px 16px;
+  background: #e2e8f0;
+  padding: 48px 16px;
 }
 
 .page {
-  max-width: 780px;          /* A4-like constrained width */
+  max-width: 720px;                /* clearer A4-style width */
   margin: 0 auto;
   background: #ffffff;
-  padding: 48px 52px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 52px 48px;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* Header */
@@ -31,7 +31,7 @@ header {
 }
 
 header h1 {
-  font-size: 1.85rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #0f172a;
   letter-spacing: -0.3px;
@@ -89,10 +89,10 @@ section {
 }
 
 h2 {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   color: #64748b;
   margin-bottom: 12px;
 }
@@ -138,24 +138,19 @@ h3 {
 .stack {
   font-size: 0.82rem;
   color: #64748b;
-  margin: 3px 0 7px;
+  margin: 3px 0 6px;
+}
+
+.desc {
+  font-size: 0.93rem;
+  color: #334155;
+  line-height: 1.55;
 }
 
 .meta {
   font-size: 0.9rem;
   color: #64748b;
   margin-top: 2px;
-}
-
-ul {
-  padding-left: 18px;
-  margin-top: 6px;
-}
-
-li {
-  margin-bottom: 4px;
-  color: #334155;
-  font-size: 0.92rem;
 }
 
 a {
@@ -172,7 +167,7 @@ a:hover {
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px 32px;
+  gap: 14px 28px;
 }
 
 .skill-group h4 {
@@ -196,13 +191,14 @@ a:hover {
   .page {
     box-shadow: none;
     padding: 0;
+    max-width: 100%;
   }
 }
 
 /* Mobile */
 @media (max-width: 640px) {
   .page {
-    padding: 32px 24px;
+    padding: 32px 22px;
   }
   header h1 {
     font-size: 1.5rem;

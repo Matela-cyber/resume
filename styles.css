@@ -14,7 +14,7 @@ body {
 }
 
 .page {
-  max-width: 720px;                /* clearer A4-style width */
+  max-width: 720px;
   margin: 0 auto;
   background: #ffffff;
   padding: 52px 48px;
@@ -104,7 +104,7 @@ h2 {
 
 /* Items */
 .item {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .item-header {
